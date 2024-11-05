@@ -36,7 +36,8 @@ describe("OIJTOIJ", () => {
 			phenomenon: "TestSchema.TestPhenomenon",
 			definition: "[MILLI]*Units.M",
 		};
-		await expect(Schema.fromJson(createSchemaJson(invalidUnitSystemJson), new SchemaContext())).rejects.toThrowError();
-		await Promise.resolve();
+        await expect(Schema.fromJson(createSchemaJson(invalidUnitSystemJson), new SchemaContext())).rejects.toThrowError("The Unit TestSchema.TestUnit has an invalid 'unitSystem' attribute. It should be of type 'string'.");
+
+		// await expect(Schema.fromJson(createSchemaJson(invalidUnitSystemJson), new SchemaContext())).rejects.toThrowError("The Unit TestSchema.TestUnit has an invalid 'unitSystem' attribute. It should be of type 'blah'.");
 	});
 });
