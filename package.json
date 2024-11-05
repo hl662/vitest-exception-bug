@@ -1,0 +1,16 @@
+{
+  "name": "vitest-exception-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "dependencies": {
+    "vitest": "^2.1.4",
+    "@itwin/ecschema-metadata": "^4.9.6"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
